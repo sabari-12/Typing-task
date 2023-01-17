@@ -52,7 +52,7 @@ userInput.addEventListener("input", () => {
 
     //If user enter wrong character
     else {
-      //Checks if we alreasy have added fail class
+      
       if (!char.classList.contains("fail")) {
         mistakes += 1;
         char.classList.add("fail");
@@ -65,7 +65,7 @@ userInput.addEventListener("input", () => {
     let check = quoteChars.every((element) => {
       return element.classList.contains("success");
     });
-    //End test if all characters are correct
+   
     if (check) {
       displayResult();
     }
